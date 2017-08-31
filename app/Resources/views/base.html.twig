@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        {% block stylesheets %}
+            <link href="{{ asset('bower_assets/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+            <link href="{{ asset('bower_assets/bootstrap/dist/css/bootstrap-theme.min.css') }}" rel="stylesheet">
+        {% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}
+            <script src="{{ asset('bower_assets/jquery/dist/jquery.min.js')}}"></script>
+            <script src="{{ asset('bower_assets/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+        {% endblock %}
+
+
+    </body>
+</html>
